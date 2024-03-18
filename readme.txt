@@ -1,0 +1,1 @@
+1- abra o projeto e exeucte o comando npm install para instalar todas as dependencias
