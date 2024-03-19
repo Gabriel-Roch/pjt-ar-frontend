@@ -1,5 +1,6 @@
 import { Fan, Bell, CircleUserRound } from "lucide-react"
 import { Link } from 'react-router-dom'
+import { Home } from "lucide-react"
 
 export default function Navbar() {
     return (
@@ -26,7 +27,8 @@ export default function Navbar() {
                 </div>
                 <div className="row-start-2 row-end-2 flex items-center">
                     <ul className="flex gap-3 text-zinc-400 ml-2">
-                        <li className="border-r-2 px-3"><Link to={"/"}>Dashboard</Link></li>
+                        <span className="border-r px-3"><a href="/"><Home /></a></span>
+                        <li className="border-r-2 px-3"><Link to={"/dashboard"}>Dashboard</Link></li>
                         <li><Link to={"/control"}>Control</Link></li>
                     </ul>
                 </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 import { Get } from '../../util/fetch';
+import Navbar from '../../components/navbar/Navbar';
 
 export default function Dashboard() {
 
@@ -59,6 +60,7 @@ export default function Dashboard() {
 
     return (
         <>
+            <Navbar />
             <div className='mt-10 shadow-2xl px-10 py-5'>
                 <HighchartsReact
                     highcharts={Highcharts}
